@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import logo from "./logoFooter.png"
@@ -111,6 +104,7 @@ const ribbonStyle = {
 
 const footerStyle = {
   backgroundColor: '#212529',
+  fontSize: '12px',
 }
 
 const footerTextStyle = {

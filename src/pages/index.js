@@ -1,7 +1,9 @@
 import React from "react"
-import volunteer from "./images/work.png" 
-import charity from "./images/charity.jpg"
-import volunteer2 from "./images/work2.png"
+import carousel1 from "./images/work.png" 
+import carousel2 from "./images/work2.png"
+import carousel3 from "./images/orphansCarousel3.jpg"
+import carousel4 from "./images/orphansCarousel4.jpg"
+import carousel5 from "./images/orphansCarousel5.jpg"
 import { Link } from "gatsby"
 
 import Fade from 'react-reveal/Fade';
@@ -12,39 +14,71 @@ const IndexPage = () => (
   <Layout pageInfo={{ pageName: "Main" }}>
     <Container className="text-center">
     <Carousel style={carouselStyle}>
+
       <Carousel.Item>
         <img
           style={carousalImageStyle}
           className="d-block w-100"
-          src={volunteer}
+          src={carousel1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h4 style={{color: 'white', fontWeight:'bold',}}> <i>Buying carton boxes, towels, brushes for the orphanages</i></h4>
+          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Buying carton boxes, towels, 
+            brushes for the orphanages</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           style={carousalImageStyle}
           className="d-block w-100"
-          src={volunteer2}
+          src={carousel2}
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h4 style={{color: 'white', fontWeight:'bold',}}><i>Packing the cartons of books, towels, brushes and getting it ready to be shipped</i></h4>
+          <h6 style={{color: 'black', fontWeight:'bold',}}><i>Packing the cartons of books, 
+            towels, brushes and getting it ready to be shipped</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           style={carousalImageStyle}
           className="d-block w-100"
-          src={charity}
+          src={carousel3}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Orphans in India who have 
+            just recieved our aid packages</i></h6>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          style={carousalImageStyle}
+          className="d-block w-100"
+          src={carousel4}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Another picture showing orphans in India</i></h6>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          style={carousalImageStyle}
+          className="d-block w-100"
+          src={carousel5}
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h4 style={{color: 'white', fontWeight:'bold',}}><i>An orphanage that we helped in India</i></h4>
+          <h6 style={{color: 'black', fontWeight:'bold',}}><i>An orphanage that we helped in 
+            Africa</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
+
     </Carousel>
 
     <Jumbotron style={jumbotronStyle}>
@@ -105,7 +139,7 @@ const IndexPage = () => (
         </Link>
       </Col>
       <Col sm={6}>
-        <Link to="/donate" style={{color:'black',}}>
+        <Link to="https://forms.office.com/Pages/ResponsePage.aspx?id=BdJKHR72TECcWoDCjnisON52EX5zEcxCoG_9fRc_IhJUMjVZNFBBRjREWFBNU1lYOExWUUI5VUxXUC4u" style={{color:'black',}}>
           <h2 style={headTextStyle}>Register Chapter</h2>
         </Link>
       </Col>
@@ -131,6 +165,7 @@ const cardStyle = {
 const headTextStyle = {
   margin: '0 auto',
   fontWeight: 'bolder',
+  fontSize: '20px',
 }
 
 const jumbotronStyle = {

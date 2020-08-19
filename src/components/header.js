@@ -11,9 +11,7 @@ const Header = ({ siteTitle }) => (
   >
     <Jumbotron style={MainBannerStyle} >
       <Row>
-        <Col sm={5}> <img src={logo} width="150px" height="200px"/></Col>
-        <Col sm={7}>
-        <p style={subtitlemission}>“Helping orphans defy all odds.”</p></Col>
+        <img src={logo} width="170px" height="250px" style={{margin: '0 auto',}}/>
       </Row>
     </Jumbotron>
   </header>
@@ -21,6 +19,8 @@ const Header = ({ siteTitle }) => (
 
 const MainBannerStyle = {
   background: 'white',
+  paddingTop: 0,
+  paddingBottom: 0,
   margin: 0,
   width: '100%',
   textAlign: 'center',

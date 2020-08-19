@@ -17,7 +17,7 @@ const aboutUs = () => (
       </Jumbotron>
       <Row>
           <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={problem} style={{width: '80px', height: '80px', }}/></Col>
-          <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px', textDecoration:'underline'}}>Problem</h1></Col>
+          <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px',}}>Problem</h1></Col>
       </Row>
       <Row style={rowVision}>
         <Row style={{width:'100%', justifyContent:'space-evenly'}}>
@@ -35,7 +35,7 @@ const aboutUs = () => (
       </Row>
       <Row>
           <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={vision} style={{width: '80px', height: '80px', }}/></Col>
-          <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px', textDecoration:'underline',}}>Our vision</h1></Col>
+          <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px', }}>Our vision</h1></Col>
       </Row>
       <Row style={rowVision}>
         <Row style={{width:'100%',}}><img src={problem1} style={{width: '600px', height: '300px', borderRadius: '0.3rem', margin:'0 auto',}}/></Row>

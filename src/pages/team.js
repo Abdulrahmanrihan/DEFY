@@ -95,7 +95,7 @@ const team = () => (
         </Row>
       </Card>
       <Button style={donateButtonStyle} variant="primary" size="lg" block>
-          <Link to="/" style={{color:'white',}}>
+          <Link to="https://docs.google.com/document/d/1--lpfxZQwnRQX5t1BkE4wIaZOcZ2L6EDOi3pl8TuFgA/edit" style={{color:'white',}}>
               Join Us
           </Link>
       </Button>

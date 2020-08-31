@@ -1,5 +1,4 @@
 # Gatsby React Bootstrap Starter
-
 A GatsbyJS starter that includes
 
 - react-bootstrap

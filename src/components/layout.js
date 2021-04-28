@@ -21,7 +21,7 @@ const Layout = ({ children, pageInfo }) => (
     render={data => (
       <>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"></link>
-        <Container fluid className="px-0 main" style={Containerfont}>
+        <div fluid className="px-0 main" style={Containerfont}>
           <Row noGutters className="justify-content-center">
             <Col>
               <Header siteTitle="DEFY ORGANIZATION" />
@@ -30,21 +30,20 @@ const Layout = ({ children, pageInfo }) => (
           <Navbar pageInfo={pageInfo} />
           <Row noGutters>
             <Col>
-              <Container>
-                <main>{children}</main>
-              </Container>
+              <main>{children}</main>
             </Col>
           </Row>
-        </Container>
-        <Container fluid className="px-0" style={Containerfont}>  
+        </div>
+        <div fluid className="px-0" style={Containerfont}>  
           <Row style={ribbonStyle}>
           </Row>  
           <Row noGutters style={{backgroundColor: '#696969', width: '100%',}}>
             <Col sm={5} className="footer-col" style={columnFooter}>
               <img src={logo} style={{width:'100px', height: '100px',}}/>
-              <span style={Containerfont}>
+              <span>
                 DEFY ORGANIZATION
                </span>
+               <p style={footerDescription}>A fiscally sponsored 501c3 organization by Hack Club US</p>
             </Col>
             <Col sm={2} className="footer-col" style={columnFooter}>
               <p style={{ textAlign: 'left', width: '100%', fontWeight: 'bold'}}> USEFULL LINKS <hr style={hrFooterStyle} /></p>
@@ -68,7 +67,7 @@ const Layout = ({ children, pageInfo }) => (
                 <p href="#features" style={linkItem}>Blog</p>
               </Link>
               <Link to="/team" style={linkItem}>
-                <p href="#features" style={linkItem}>Team</p>
+                <p href="#features" style={linkItem}>Directors</p>
               </Link>
               <Link to="/tutoring" style={linkItem}>
                 <p href="#features" style={linkItem}>Tutoring</p>
@@ -76,16 +75,17 @@ const Layout = ({ children, pageInfo }) => (
             </Col>
             <Col sm={3} className="footer-col" style={columnFooter}>
               <p style={{ textAlign: 'left', width: '100%', fontWeight: 'bold'}}> Contacts <hr style={hrFooterStyle} /></p>
+              <p style={linkItem} href="#features">+ (971) 568967479</p>
               <p style={linkItem} href="#features">+ (20) 1095228556</p>
               <p style={linkItem} href="#features">defy@gmail.com</p>
             </Col>
           </Row>
           <Row noGutters style={footerStyle} >
             <span style={footerTextStyle}>
-               COPYRIGHTS © {new Date().getFullYear()}, DEFY ORG.
+               COPYRIGHTS © {new Date().getFullYear()} DEFY ORG.
             </span>
           </Row>
-        </Container>
+        </div>
       </>
     )}
   />
@@ -93,6 +93,8 @@ const Layout = ({ children, pageInfo }) => (
 
 const Containerfont = {
   fontFamily: 'Poppins',
+  overflowX: 'hidden',
+  backgroundColor: '#F7F7F7',
 }
 
 const ribbonStyle = {
@@ -118,7 +120,7 @@ const footerTextStyle = {
 const columnFooter = {
   padding: '40px',
   width: '100%',
-  textAlign: 'left',
+  textAlign: 'center',
   color: 'white',
 } 
 
@@ -133,6 +135,11 @@ const hrFooterStyle = {
   width:'140px', 
   color: 'rgb(33, 37, 41)',
   margin: '10px 0px 0px 0px',
+}
+
+const footerDescription = {
+  width: '300px',
+  overflowWrap: 'normal',
 }
 
 export default Layout

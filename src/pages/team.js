@@ -12,7 +12,7 @@ const team = () => (
   <Layout pageInfo={{ pageName: "team" }}>
     <Container className="text-center">
         <Jumbotron style={teamJumbotronStyle}>
-          <h2>Team</h2>
+          <h2>Directors</h2>
         </Jumbotron>
 
         <Card style={teamCardStyle}>
@@ -105,6 +105,7 @@ const team = () => (
 )
 
 const teamCardStyle = {
+  background: 'transparent',
   width: '100%',
   marginBottom: '40px',
   border: 'none',
@@ -129,7 +130,8 @@ const donateButtonStyle= {
   marginTop: 50, 
   padding: '20px', 
   backgroundColor: '#212529',
-  border: 'none'
-}
+  border: 'none',
+  boxShadow: '4px 4px 1px black',
+  borderRadius: '0px',}
 
 export default team

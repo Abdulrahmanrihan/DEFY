@@ -12,41 +12,183 @@ const Partners = () => (
       <Jumbotron style={teamJumbotronStyle}>
           <h2>Partners</h2>
       </Jumbotron>
-        <Card style={{width:'300px'}}>
-          <Card.Img variant="top" src={hackclub} style={{width: '300px', height: '250px',}}/>
-          <Card.Body>
-            <Card.Title>Hack club Egypt</Card.Title>
-            <Card.Text>
-            Hack Club is a global network of programming clubs where members learn to code through tinkering and 
-            building projects.
-            </Card.Text>
-            <Card.Footer>
-              <small className="text-muted">Technical Partner</small>
-            </Card.Footer>
-          </Card.Body>
-        </Card>
-      <Jumbotron style={teamJumbotronStyle}>
-          <h2>Interviews</h2>
-      </Jumbotron>
-      <Card className="text-center" style={{border:'none',}}>
-        <Row>
-          <Col sm={3}><img src={ziyaan} style={{width:'100%', height:'140px', borderRadius:'0.3rem',}}/></Col>
-          <Col sm={9} style={{textAlign: 'left',}}>
-            <Card.Title>Our Interview with Ziyaan Virji</Card.Title>
-            <Card.Text>
-            Interview with Diana Award Winner, Global Teen Leader, 
-            Global Social Leader Ziyaan Virji who was recognized for his outstanding work in AASW!
-            </Card.Text>
-            <Button href="https://drive.google.com/file/d/1aFyGtrLVQoYLFJ4dhlDFSc9QNr7DKasp/view?usp=sharing" variant="primary">Check it out</Button>
-          </Col>
-        </Row>
-      </Card>
+        <CardDeck style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+          }
+            <Card.Body style={cardBody}>
+              <Card.Title>Hack club Egypt</Card.Title>
+              {
+              // <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Technical Partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>South India Agencies Pvt Ltd</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Primary sponsor company partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Aquaholic creative solutions LLC</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Secondary sponsor company partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+        </CardDeck>
+        <CardDeck style={{display: 'flex', flexDirection: 'row', paddingTop: '40px', justifyContent: 'space-around'}}>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Chandra Engineering and Mechanical Pvt Ltd</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Primary resources company partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>For the menstruator non-profit organization</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Primary resources company partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Crochet your way non-profit organization</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Non-profit partner organization</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+        </CardDeck>
+        <CardDeck style={{display: 'flex', flexDirection: 'row', paddingTop: '40px', justifyContent: 'space-around'}}>
+        <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Antharbaava Foundation</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Orphanage partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Sneha Orphanage</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Orphanage partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+          <Card style={card}>
+            {
+            //<Card.Img variant="top" src={hackclub} style={cardImage}/>
+            }
+            <Card.Body style={cardBody}>
+              <Card.Title>Angels Orphanage</Card.Title>
+              {
+              //  <Card.Text>
+              // Hack Club is a global network of programming clubs where members learn to code through tinkering and 
+              // building projects.
+              // </Card.Text>
+              }
+              <Card.Footer>
+                <small className="text-muted">Orphanage partner</small>
+              </Card.Footer>
+            </Card.Body>
+          </Card>
+        </CardDeck>
     </Container>
   </Layout>
 )
 
 const teamJumbotronStyle = {
   marginTop: 20,
+}
+
+const cardImage = {
+  objectFit: 'cover',
+}
+
+const card = {
+  flex: '0 0 21rem',
+  height: 'min-content'
+}
+
+const cardBody = {
 }
 
 export default Partners

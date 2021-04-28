@@ -56,17 +56,17 @@ const Tutoring = () => (
         <Button variant="primary" 
           href="https://forms.office.com/Pages/ResponsePage.aspx?id=BdJKHR72TECcWoDCjnisON52EX5zEcxCoG_9fRc_IhJUMk5NMFZCNEdaNE1IVEZGUVhXME4wUEJKOS4u" 
           size="lg"
-          style={{alignSelf:'center', margin: '20px',}} >
+          style={buttonStyle} >
               Register
         </Button>
       </Col>
       <Col sm={5} style={{margin: 0, padding: '20px',}}>
-        <img src={zoom} style={{width:'400px', height: '200px', borderRadius: '0.3rem',}}/> 
+        <img src={zoom} style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
       </Col>
     </Row>
     <Row style={rowTutoringStyle}>
       <Col sm={5}>
-        <img src={tutors} style={{width:'400px', height: '200px', borderRadius: '0.3rem',}}/> 
+        <img src={tutors} style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
       </Col>
       <Col sm={7}>
         <h3 style={subTextTutoring}>For Tutors<br/></h3>
@@ -78,7 +78,7 @@ const Tutoring = () => (
         <Button variant="primary" 
         href="https://forms.office.com/Pages/ResponsePage.aspx?id=BdJKHR72TECcWoDCjnisON52EX5zEcxCoG_9fRc_IhJUMk5NMFZCNEdaNE1IVEZGUVhXME4wUEJKOS4u" 
         size="lg"
-        style={{alignSelf:'center', margin: '20px',}} >
+        style={buttonStyle} >
             Register
         </Button>
       </Col>
@@ -112,6 +112,15 @@ const textFormsStyle = {
   fontSize: '20px',
   marginTop: '15px',
   color: 'grey',
+}
+
+const buttonStyle = {
+  alignSelf:'center', 
+  margin: '20px', 
+  backgroundColor: '#212529', 
+  border: 'none',
+  boxShadow: '4px 4px 1px black',
+  borderRadius: '0px',
 }
 
 export default Tutoring

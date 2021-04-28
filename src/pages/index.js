@@ -1,10 +1,13 @@
 import React from "react"
-import carousel1 from "./images/work.png" 
-import carousel2 from "./images/work2.png"
-import carousel3 from "./images/orphansCarousel3.jpg"
-import carousel4 from "./images/orphansCarousel4.jpg"
-import carousel5 from "./images/orphansCarousel5.jpg"
+import carousel1 from "./images/carousel1.png" 
+import carousel2 from "./images/carousel2.png"
+import carousel3 from "./images/carousel3.jpg"
+import carousel4 from "./images/carousel4.jpg"
+import carousel5 from "./images/carousel5.jpg"
+import carousel6 from "./images/carousel6.jpg"
+import carousel7 from "./images/carousel7.jpg"
 import { Link } from "gatsby"
+import "./stylefiles/index.css"
 
 import Fade from 'react-reveal/Fade';
 import { Container, Carousel, CardDeck, Card, Jumbotron, Col, Row } from "react-bootstrap"
@@ -12,9 +15,8 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "Main" }}>
-    <Container className="text-center">
+    <div className="text-center">
     <Carousel style={carouselStyle}>
-
       <Carousel.Item>
         <img
           style={carousalImageStyle}
@@ -23,11 +25,10 @@ const IndexPage = () => (
           alt="First slide"
         />
         <Carousel.Caption>
-          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Buying carton boxes, towels, 
+          <h6 style={carouselCaption}> <i>Buying carton boxes, towels, 
             brushes for the orphanages</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
         <img
           style={carousalImageStyle}
@@ -36,36 +37,34 @@ const IndexPage = () => (
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h6 style={{color: 'black', fontWeight:'bold',}}><i>Packing the cartons of books, 
+          <h6 style={carouselCaption}><i>Packing the cartons of books, 
             towels, brushes and getting it ready to be shipped</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
         <img
           style={carousalImageStyle}
           className="d-block w-100"
           src={carousel3}
-          alt="First slide"
+          alt="Third slide"
         />
         <Carousel.Caption>
-          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Orphans in India who have 
-            just recieved our aid packages</i></h6>
+          <h6 style={carouselCaption}><i>Packing the cartons of books, 
+            towels, brushes and getting it ready to be shipped</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
         <img
           style={carousalImageStyle}
           className="d-block w-100"
           src={carousel4}
-          alt="First slide"
+          alt="Third slide"
         />
         <Carousel.Caption>
-          <h6 style={{color: 'black', fontWeight:'bold',}}> <i>Another picture showing orphans in India</i></h6>
+          <h6 style={carouselCaption}><i>Advait pitching the Defy project to the SIA pvt 
+            ltd company </i></h6>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
         <img
           style={carousalImageStyle}
@@ -74,12 +73,61 @@ const IndexPage = () => (
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h6 style={{color: 'black', fontWeight:'bold',}}><i>An orphanage that we helped in 
-            Africa</i></h6>
+          <h6 style={carouselCaption}><i>Our volunteers in the Antharbaava foundation in India</i></h6>
         </Carousel.Caption>
       </Carousel.Item>
-
+      <Carousel.Item>
+        <img
+          style={carousalImageStyle}
+          className="d-block w-100"
+          src={carousel6}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h6 style={carouselCaption}><i>Tutoring orphans for free in pakistan</i></h6>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          style={carousalImageStyle}
+          className="d-block w-100"
+          src={carousel7}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h6 style={carouselCaption}> <i>Manufacturing 3D designed projects 
+            in Chandra Engineering Works</i></h6>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
+
+    <Jumbotron style={jumbotronStyle}>
+      <h2 style={headTextStyle}>Stats</h2>
+    </Jumbotron>
+
+      
+    <Row style={rowTutoringStyle}>
+      <Col style={statcircle}> 
+        <h2 style={stats}>+2,000</h2>
+        <p style={{color:'grey',}}>Underprivileged people impacted</p>
+      </Col>
+      <Col style={statcircle}> 
+        <h2 style={stats}>100+</h2>
+        <p style={{color:'grey',}}> Volunteers</p>
+      </Col>
+      <Col style={statcircle}>
+        <h2 style={stats}>$25,000</h2>
+        <p style={{color:'grey',}}>Money raised</p>
+      </Col>
+      <Col style={statcircle}> 
+        <h2 style={stats}>35</h2>
+        <p style={{color:'grey',}}> 3D designed projects</p>
+      </Col>
+      <Col style={statcircle}> 
+        <h2 style={stats}>1,000</h2>
+        <p style={{color:'grey',}}> Kilograms of paper recycled</p>
+      </Col>
+    </Row>
 
     <Jumbotron style={jumbotronStyle}>
       <h2 style={headTextStyle}>How we started</h2>
@@ -107,15 +155,15 @@ const IndexPage = () => (
     <CardDeck style={cardDeckStyle}>
       <Card style={cardStyle}>
         <Card.Body>
-          <Card.Text style={{color:'grey',}}>
-          “Thank you Defy for donating money to the <span style={{color:'black',}}>J&K orphanage</span>, with it we were able to buy essentials like food, 
+          <Card.Text>
+          “Thank you Defy for donating money to the <span style={{color:'white',}}>J&K orphanage</span>, with it we were able to buy essentials like food, 
           water and were able to pay the electricity bill”
           </Card.Text>
         </Card.Body>
       </Card>
       <Card style={cardStyle}>
         <Card.Body>
-          <Card.Text style={{color:'grey',}}>
+          <Card.Text>
           "The children liked the way you taught them maths and science. 
           They were hoping to see you again with them. One of the students wants to become a part of your organization later!"
           </Card.Text>
@@ -123,7 +171,7 @@ const IndexPage = () => (
       </Card>
       <Card style={cardStyle}>
         <Card.Body>
-          <Card.Text style={{color:'grey',}}>
+          <Card.Text>
           “Thank you so much for providing the children with food, we will appreciate it, 
           the children really liked it, we hope to see you again”
           </Card.Text>
@@ -131,35 +179,41 @@ const IndexPage = () => (
       </Card>
     </CardDeck>
 
-    <Jumbotron>
       <Row>
-      <Col sm={6}>
-        <Link to="/donate" style={{color:'black',}}>
-          <h2 style={headTextStyle}>Donate</h2>
-        </Link>
-      </Col>
-      <Col sm={6}>
-        <Link to="https://forms.office.com/Pages/ResponsePage.aspx?id=BdJKHR72TECcWoDCjnisON52EX5zEcxCoG_9fRc_IhJUMjVZNFBBRjREWFBNU1lYOExWUUI5VUxXUC4u" style={{color:'black',}}>
-          <h2 style={headTextStyle}>Register Chapter</h2>
-        </Link>
-      </Col>
+        <Col sm={3}></Col>
+        <Col sm={3}>
+          <Link to="/donate">
+          <button style={bannerButton}><span style={bannerHead}>Donate </span></button>
+          </Link>
+        </Col>
+        <Col sm={3}>
+          <button style={bannerButton} href="https://forms.office.com/Pages/ResponsePage.aspx?id=BdJKHR72TECcWoDCjnisON52EX5zEcxCoG_9fRc_IhJUMjVZNFBBRjREWFBNU1lYOExWUUI5VUxXUC4u">
+          <span style={bannerHead}> Register Chapter</span></button>
+        </Col>
+        <Col sm={3}></Col>
       </Row>
-    </Jumbotron>
-
-    </Container>
+    </div>
   </Layout>
 )
 
 const carouselStyle = {
-  margin: '5%',
+  paddingLeft: '200px',
+  paddingRight: '200px',
+  backgroundColor: 'lightgrey',
 }
 
 const cardDeckStyle = {
   marginBottom: '5%',
+  paddingBottom: '50px',
+  paddingTop: '50px',
+  backgroundColor: '#212529',
 }
 
 const cardStyle = {
   border: 'none',
+  background: 'transparent',
+  color: 'grey', 
+  fontStyle: 'italic',
 }
 
 const headTextStyle = {
@@ -170,17 +224,65 @@ const headTextStyle = {
 
 const jumbotronStyle = {
   background: "transparent",
+  paddingBottom: '40px',
   margin: 0,
 }
 
 const carousalImageStyle = {
   height: '470px',
-  borderRadius: "0.3rem",
-  opacity: 0.9,
+  marginBottom: '0',
 }
 
 const storyStyle = {
   fontSize: 17,
+  paddingLeft: '70px',
+  paddingRight: '70px',
+}
+
+const rowTutoringStyle = {
+  padding: '80px',
+  backgroundColor: '#212529',
+  width: '100%',
+  overflowX: 'hidden',
+  margin: '0',
+}
+
+const stats = {
+  color: 'white',
+  textShadow: '4px 4px 1px black',
+  fontSize: '50px',
+  paddingBottom: '10px',
+  paddingTop: '20px',
+}
+
+const statcircle = {
+  height: '100%',
+}
+
+const bannerButton = {
+  backgroundColor:'#212529',
+  boxShadow: '4px 4px 1px black',
+  border: 'none',
+  padding: '20px',
+  width: '300px',
+}
+
+const bannerHead = {
+  fontWeight: 'bold',
+  color: 'white',
+  textShadow: '4px 4px 1px black',
+  fontSize: '25px',
+  paddingBottom: '10px',
+  paddingTop: '20px',
+}
+
+const carouselCaption = {
+  color: 'black', 
+  fontWeight:'bold', 
+  backgroundColor:'white',
+  boxShadow: '4px 4px 1px black',
+  paddingTop: '3px',
+  paddingBottom: '3px',
 }
 
 export default IndexPage

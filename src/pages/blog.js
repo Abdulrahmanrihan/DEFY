@@ -19,11 +19,11 @@ const SecondPage = () => (
         there are more than 140 million children who are considered 
         to be orphans by one definition or another. Unfortunately, there are..
         </Card.Text>
-        <Button variant="primary">
+        <Button variant="primary" style={buttonStyle}>
             <Link to="/blogposts/firstBlogPost" style={{color:'white',}}>
             Continue
             </Link>
-          </Button>
+        </Button>
       </Card.Body>
     </Card>
     </Container>
@@ -32,6 +32,13 @@ const SecondPage = () => (
 
 const teamJumbotronStyle = {
   marginTop: 20,
+}
+
+const buttonStyle={
+  backgroundColor: '#212529', 
+  border: 'none',
+  boxShadow: '4px 4px 1px black',
+  borderRadius: '0px',
 }
 
 export default SecondPage

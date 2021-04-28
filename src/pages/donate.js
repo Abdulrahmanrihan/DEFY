@@ -36,6 +36,7 @@ const RowDonate = {
 const donateButtonStyle= {
   padding: '20px', 
   backgroundColor: 'orange',
-  border: 'none'
-}
+  border: 'none',
+  boxShadow: '4px 4px 1px #b36200',
+  borderRadius: '0px',}
 export default Donate

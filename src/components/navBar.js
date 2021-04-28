@@ -8,12 +8,13 @@ const CustomNavbar = ({ pageInfo }) => {
   return (
     <>
       <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark" style={navbarStyle}>
-      <Link to="/" className="link-no-style">
-      <Navbar.Brand href="#home">Home</Navbar.Brand>
-      </Link>
+      
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="m-auto">
+          <Link to="/" className="link-no-style">
+          <Navbar.Brand href="#home">Home</Navbar.Brand>
+          </Link>
           <Link to="/aboutUs" className="link-no-style">
           <Nav.Link href="#aboutUS">About us</Nav.Link>
           </Link>
@@ -21,10 +22,10 @@ const CustomNavbar = ({ pageInfo }) => {
           <Nav.Link href="#tutoring">Tutoring</Nav.Link>
           </Link>
           <Link to="/team" className="link-no-style">
-          <Nav.Link href="#team">Team</Nav.Link>
+          <Nav.Link href="#team">Directors</Nav.Link>
           </Link>
           <Link to="/partners" className="link-no-style">
-          <Nav.Link href="#partners">Partners & Interviews</Nav.Link>
+          <Nav.Link href="#partners">Partners</Nav.Link>
           </Link>
           <Link to="/chapters" className="link-no-style">
           <Nav.Link href="#chapters">Chapters</Nav.Link>

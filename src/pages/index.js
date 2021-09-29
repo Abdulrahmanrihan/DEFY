@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 import "./stylefiles/index.css"
 
 import Fade from 'react-reveal/Fade';
-import { Container, Carousel, CardDeck, Card, Jumbotron, Col, Row } from "react-bootstrap"
+import { Carousel, CardDeck, Card, Jumbotron, Col, Row } from "react-bootstrap"
 import Layout from "../components/layout"
 
 const IndexPage = () => (

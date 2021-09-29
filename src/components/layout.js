@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import logo from "./logoFooter.png"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 
 import Header from "./header"
 import Navbar from "./navBar"
@@ -39,7 +39,7 @@ const Layout = ({ children, pageInfo }) => (
           </Row>  
           <Row noGutters style={{backgroundColor: '#696969', width: '100%',}}>
             <Col sm={5} className="footer-col" style={columnFooter}>
-              <img src={logo} style={{width:'100px', height: '100px',}}/>
+              <img src={logo} alt="Our Logo" style={{width:'100px', height: '100px',}}/>
               <span>
                 DEFY ORGANIZATION
                </span>

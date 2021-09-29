@@ -33,9 +33,6 @@ const CustomNavbar = ({ pageInfo }) => {
           <Link to="/blog" className="link-no-style">
           <Nav.Link href="#blog">Blog</Nav.Link>
           </Link>
-          <Link to="/donate" className="link-no-style">
-          <Nav.Link href="#donate">Donate</Nav.Link>
-          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -44,8 +41,7 @@ const CustomNavbar = ({ pageInfo }) => {
 }
 
 const navbarStyle = {
-  paddingLeft: '20%',
-  paddingRight: '20%',
+  margin: "auto",
 }
 
 export default CustomNavbar

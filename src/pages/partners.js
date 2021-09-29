@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
-import ziyaan from "./images/ziyaan.png"
-import hackclub from ".//images/hackclubegypt.png"
+//import { Link } from "gatsby"
+//import ziyaan from "./images/ziyaan.png"
+//import hackclub from ".//images/hackclubegypt.png"
 
 import Layout from "../components/layout"
-import { Container, Jumbotron, Col, Card, Row, Button, CardDeck } from "react-bootstrap"
+import { Container, Jumbotron, Card, CardDeck } from "react-bootstrap"
 
 const Partners = () => (
   <Layout pageInfo={{ pageName: "partners" }}>
@@ -177,10 +177,6 @@ const Partners = () => (
 
 const teamJumbotronStyle = {
   marginTop: 20,
-}
-
-const cardImage = {
-  objectFit: 'cover',
 }
 
 const card = {

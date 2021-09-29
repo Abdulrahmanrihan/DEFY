@@ -16,14 +16,14 @@ const aboutUs = () => (
             <h2>About Us</h2>
       </Jumbotron>
       <Row>
-          <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={problem} style={{width: '80px', height: '80px', }}/></Col>
+          <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={problem} alt="Problem Visualization" style={{width: '80px', height: '80px', }}/></Col>
           <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px',}}>Problem</h1></Col>
       </Row>
       <Row style={rowVision}>
         <Row style={{width:'100%',}}>
           <Col sm={1}></Col>
-          <Col sm={5}><img src={orphan} style={imageAboutus}/></Col>
-          <Col sm={5}><img src={orphansBlack} style={imageAboutus}/></Col>
+          <Col sm={5}><img src={orphan} alt="Child" style={imageAboutus}/></Col>
+          <Col sm={5}><img src={orphansBlack} alt="children" style={imageAboutus}/></Col>
           <Col sm={1}></Col>
         </Row>
         <Row>
@@ -38,11 +38,11 @@ const aboutUs = () => (
         </Row>
       </Row>
       <Row>
-          <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={vision} style={{width: '80px', height: '80px', }}/></Col>
+          <Col sm={5} style={{padding:'0px',textAlign:'right',}}><img src={vision} alt="Our Vision" style={{width: '80px', height: '80px', }}/></Col>
           <Col sm={7} style={{padding:'0px',textAlign: 'left', }}><h1 style={{paddingTop: '20px', }}>Our vision</h1></Col>
       </Row>
       <Row style={rowVision}>
-        <Row style={{width:'100%',}}><img src={problem1} style={imageAboutus}/></Row>
+        <Row style={{width:'100%',}}><img src={problem1} alt="Problem" style={imageAboutus}/></Row>
         <Row>
           <p style={visionStatementStyle}>Here at Defy, we believe every orphan has the potential to flourish and defy the odds set against them. 
           Any challenge is surmountable with the right resources and opportunities, which is exactly what Defy aims 
@@ -61,7 +61,6 @@ const teamJumbotronStyle = {
 }
 
 const visionStatementStyle = {
-  textAlign: 'left',
   marginLeft: '100px',
   marginRight: '100px',
   marginTop: '60px',

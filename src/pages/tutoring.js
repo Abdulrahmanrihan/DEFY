@@ -25,22 +25,22 @@ const Tutoring = () => (
     </Row>
     <Row style={rowTutoringStyle}>
       <Col> 
-        <img src={whiteboard} width="100px" height="100px" style={{marginBottom:'20px',}}/>
+        <img src={whiteboard} alt="Whiteboard" width="100px" height="100px" style={{marginBottom:'20px',}}/>
         <h4>Online Lessons</h4>
         <p style={{color:'grey',}}>Use our whiteboard to experience live interactive tuition lessons from your home</p>
       </Col>
       <Col>
-        <img src={graduation} width="100px" height="100px" style={{marginBottom:'20px',}}/>
+        <img src={graduation} alt="Graduation" width="100px" height="100px" style={{marginBottom:'20px',}}/>
         <h4>Certification</h4>
         <p style={{color:'grey',}}> We provide certificates for our program graduates</p>
       </Col>
       <Col> 
-        <img src={calendar} width="100px" height="100px" style={{marginBottom:'20px',}}/>
+        <img src={calendar} alt="Calendar" width="100px" height="100px" style={{marginBottom:'20px',}}/>
         <h4>Manage lessons</h4>
         <p style={{color:'grey',}}> flexible, Nicely organized lessons for the convienience of our students</p>
       </Col>
       <Col> 
-        <img src={globe} width="100px" height="100px" style={{marginBottom:'20px',}}/>
+        <img src={globe} alt="Globe" width="100px" height="100px" style={{marginBottom:'20px',}}/>
         <h4>Wide choice</h4>
         <p style={{color:'grey',}}> We provide tutors from all over the world, who speak almost over 24 languages</p>
       </Col>
@@ -61,12 +61,12 @@ const Tutoring = () => (
         </Button>
       </Col>
       <Col sm={5} style={{margin: 0, padding: '20px',}}>
-        <img src={zoom} style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
+        <img src={zoom} alt="Zoom meetings" style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
       </Col>
     </Row>
     <Row style={rowTutoringStyle}>
       <Col sm={5}>
-        <img src={tutors} style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
+        <img src={tutors} alt="Tutors" style={{width:'400px', height: '200px', boxShadow: '6px 8px 1px black'}}/> 
       </Col>
       <Col sm={7}>
         <h3 style={subTextTutoring}>For Tutors<br/></h3>
